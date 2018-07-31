@@ -72,7 +72,8 @@ class Fighter extends Unit implements Fightable{
     public void move(int x,int y){}
     public void attack(Fightable f){}
 }
-Fighter f=new Fighter();
+Fightable f=(Fightable)new Fighter();
+           or
 Fightable f= new Fighter();
 </pre>
 
