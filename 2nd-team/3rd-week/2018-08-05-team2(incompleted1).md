@@ -21,7 +21,7 @@
 >교재에는 SortedSet, NavigableSet과 관련된 내용이 빠져있습니다. 대신 JAVA API 문서를 참고해주세요.  
 https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 
-## SortedSet : 저장된 원소에 대한 **전순서** 배열을 지원하는 Set의 **확장 인터페이스**
+## 저장된 원소에 대한 **전순서** 배열을 지원하는 Set의 **확장 인터페이스**
 ### 임의의 두 **원소를 비교하여 규칙에 따라 순서** 지정
 ### Iterator은 항상 **오름차순**으로만 이동
 
@@ -41,7 +41,7 @@ https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 네비게이블셋(NavigableSet)
 ==============
 
-## SortedSet에 Navigate 메서드를 추가해 **목표에 가장 근접한 결과**를 알려주는 **인터페이스**
+## SortedSet에 **검색 목표에 가장 근접한 결과** 확인 기능을 추가한 **인터페이스**
 ### SortedSet과 달리 **오름차순, 내림차순** 접근 모두 가능
 
 >단, 오름차순 탐색속도가 더 빠르다.
