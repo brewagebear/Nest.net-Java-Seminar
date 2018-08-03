@@ -1,6 +1,7 @@
-셋(Set)
+셋(Set) : 데이터 집합의 한 종류
 ========
-### 순서가 없고 데이터 중복을 허용하지 않는 데이터의 집합
+## - 저장순서 유지X 
+## - 데이터 중복 허용X 
 
 <img src=".\SetEdit.PNG" alt="셋 상속도" width = 400>
 
@@ -17,3 +18,38 @@
 
 소트셋(SortedSet)
 ==============
+>교재에는 SortedSet, NavigableSet과 관련된 내용이 빠져있습니다. 대신 JAVA API 문서를 참고해주세요.  
+https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
+
+## SortedSet : 저장된 원소에 대한 **전순서** 배열을 지원하는 Set의 **확장 인터페이스**
+### 임의의 두 **원소를 비교하여 규칙에 따라 순서** 지정
+### Iterator은 항상 **오름차순**으로만 이동
+
+### 규칙
+- Comparable : 통념적인 순서 (1-2-3-4-... / A-B-C-D)
+- Comparator : 사용자가 정한 특정한 규칙
+>Comparator 메서드는 SortedSet 생성 시에 제공된다.
+
+### SortedSet을 구현한 클래스의 생성자 규칙
+1. 매개변수 X (빈 SortedSet)
+2. Comparator 매개변수 1개 (특정 규칙있는 빈 SortedSet)
+3. Collection 매개변수 1개 (Collection과 같은 원소의 SortedSet, 통념적인 순서)
+4. SortedSet 매개변수 1개 (SortedSet과 같은 원소, 순서의 SortedSet)
+
+----------------------
+
+네비게이블셋(NavigableSet)
+==============
+
+## SortedSet에 길찾기(Navigate) 메서드를 추가하여 **목표에 가장 가까운 결과**를 알려주는 **인터페이스**
+### SortedSet과 달리 **오름차순, 내림차순** 접근 모두 가능
+
+>단, 오름차순 탐색속도가 더 빠르다.
+
+### 반환값이 null일 경우 모호해지므로 null 추가를 허용하지 않는 것을 권장
+>본질적으로 Comparable은 null 값을 허용하지 않는다.
+
+### TreeSet **클래스**와 ConcurrentSkipListSet **클래스**는 NavigableSet **인터페이스**를 상속받은 것  
+  
+   
+## 즉, SortedSet과 NavigableSet 모두 **인터페이스**이므로 단독적으로 사용불가
