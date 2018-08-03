@@ -41,13 +41,15 @@ https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 네비게이블셋(NavigableSet)
 ==============
 
-## SortedSet에 길찾기(Navigate) 메서드를 추가하여 **목표에 가장 가까운 결과**를 알려주는 **인터페이스**
+## SortedSet에 Navigate 메서드를 추가해 **목표에 가장 근접한 결과**를 알려주는 **인터페이스**
 ### SortedSet과 달리 **오름차순, 내림차순** 접근 모두 가능
 
 >단, 오름차순 탐색속도가 더 빠르다.
 
 ### 반환값이 null일 경우 모호해지므로 null 추가를 허용하지 않는 것을 권장
 >본질적으로 Comparable은 null 값을 허용하지 않는다.
+
+--------------
 
 ### TreeSet **클래스**와 ConcurrentSkipListSet **클래스**는 NavigableSet **인터페이스**를 상속받은 것  
   
