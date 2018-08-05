@@ -28,7 +28,7 @@ https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 ### 규칙
 - Comparable : 통념적인 순서 (1-2-3-4-... / A-B-C-D)
 - Comparator : 사용자가 정한 특정한 규칙
->Comparator 는 SortedSet 생성 시에 제공된다.
+>Comparator 인터페이스는 SortedSet 생성 시에 제공된다.
 
 ### SortedSet을 구현한 클래스의 생성자 규칙
 1. 매개변수 X (빈 SortedSet)
