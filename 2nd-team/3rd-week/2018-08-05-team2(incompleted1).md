@@ -25,6 +25,9 @@ https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 ### 임의의 두 **원소를 비교하여 규칙에 따라 순서** 지정
 ### Iterator은 항상 **오름차순**으로만 이동
 
+### SortedSet의 메서드
+<img src=".\SortedSet methods.PNG" alt="소트셋 메서드" width = 600>
+
 ### 규칙
 - Comparable : 통념적인 순서 (1-2-3-4-... / A-B-C-D) (natural order)
 - Comparator : 사용자가 정한 특정한 규칙
