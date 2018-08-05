@@ -26,7 +26,7 @@ https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 ### Iterator은 항상 **오름차순**으로만 이동
 
 ### SortedSet의 메서드
-<img src=".\SortedSet methods.PNG" alt="소트셋 메서드" width = 1000>
+<img src=".\SortedSet methods.PNG" alt="소트셋 메서드" width = 1100>
 
 ### 규칙
 - Comparable : 통념적인 순서 (1-2-3-4-... / A-B-C-D) (natural order)
