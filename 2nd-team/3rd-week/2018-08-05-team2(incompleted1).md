@@ -29,7 +29,7 @@ https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 
 ### SortedSet의 메서드
 <img src=".\SortedSet methods.PNG" alt="소트셋 메서드" width = 1100>
-> Spliterator는 Iterator과 비슷하게 객체를 탐색하고 분할하기 위한 인터페이스로, 병렬 작업에 보다 특화되었다고 합니다.
+>Spliterator는 Iterator과 비슷하게 객체를 탐색하고 분할하기 위한 인터페이스로, 병렬 작업에 보다 특화되었다고 합니다.
 
 ### 규칙
 - Comparable : 통념적인 순서 (1-2-3-4-... / A-B-C-D) (natural order)
