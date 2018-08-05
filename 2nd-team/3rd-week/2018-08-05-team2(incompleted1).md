@@ -5,7 +5,7 @@
 
 <img src=".\SetEdit.PNG" alt="셋 상속도" width = 400>
 
--------------
+--------------
 --------------
 해시셋(HashSet)
 ==============
@@ -26,7 +26,7 @@ https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 ### Iterator은 항상 **오름차순**으로만 이동
 
 ### 규칙
-- Comparable : 통념적인 순서 (1-2-3-4-... / A-B-C-D)
+- Comparable : 통념적인 순서 (1-2-3-4-... / A-B-C-D) (natural order)
 - Comparator : 사용자가 정한 특정한 규칙
 >Comparator 인터페이스는 SortedSet 생성 시에 제공된다.
 
