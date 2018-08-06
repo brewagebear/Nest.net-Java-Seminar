@@ -82,6 +82,9 @@ ConcurrentSkipListSet
 ### 원소의 보다 빠른 검색을 위해 **skip list 자료구조**를 적용
 <img src=".\skip_list.png" alt="네비게이블셋 메서드" width = 500>
 
+### ConcurrentSkipListSet 생성자
+<img src=".\concurrent-constructor.PNG" alt="ConcurrentSkipListSet생성자" width = 1100>
+
 
 ### NavigableSet과 마찬가지로 **오름차순, 내림차순** 접근 모두 가능
 > 단, 오름차순 탐색속도가 더 빠르다.
