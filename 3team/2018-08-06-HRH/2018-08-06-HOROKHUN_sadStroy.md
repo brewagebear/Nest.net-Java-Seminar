@@ -12,7 +12,7 @@
 
 TreeMap 의 메서드
 
-![Alt text](/t1.JPG)
+![Alt text](./t1.JPG)
 
 ## 1.3 TreeMap 코드분석
 java
