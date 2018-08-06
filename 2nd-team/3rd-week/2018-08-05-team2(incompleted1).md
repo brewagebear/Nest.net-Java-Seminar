@@ -53,6 +53,9 @@ https://docs.oracle.com/javase/10/docs/api/java/util/SortedSet.html
 
 >단, 오름차순 탐색속도가 더 빠르다.
 
+### NavigableSet의 메서드
+<img src=".\NavigableSet methods.PNG" alt="셋 메서드" width = 1100>
+
 ### 반환값이 null일 경우 모호해지므로 null 추가를 허용하지 않는 것을 권장
 >본질적으로 Comparable은 null 값을 허용하지 않는다.
 
