@@ -19,7 +19,7 @@ TreeMap이란?
 -----------
 :정렬 알고리즘 중에서 일반적으로 가장 빠른 성능을 가진 알고리즘
 
-![Alt text](./redblacktree-복사본.jpg)
+![Alt text](./redblacktree.jpg)
 
 조건
 - 노드는 레드 혹은 블랙 중 하나의 색을 가짐
@@ -35,18 +35,18 @@ TreeMap이란?
 - 좌회전: 좌측에 있던 자식 노드를 부모 노드로 변경한 뒤, 왼쪽 자식노드의 오른쪽 자식노드를 부모의 왼쪽 자식으로 연결함
 - 우회전: 우측에 있던 자식노드를 부모노드로 변경한 뒤, 오른쪽 자식노드의 왼쪽 자식노드를 부모의 오른쪽 자식으로 연결함
 
-![Alt text](./redblacktree2-복사본.jpg)
+![Alt text](./redblacktree2.jpg)
 
 트리셋과 트리맵
 -------------
 **<트리셋>**
 
-![Alt text](./treeset-복사본.jpg)
+![Alt text](./treeset.jpg)
 
 **<트리맵>**
 
 
-![Alt text](./treemap-복사본.jpg)
+![Alt text](./treemap.jpg)
 
 => 키와 값이 저장된 Map.Entry를 저장함, 값의 중복 허용
 
