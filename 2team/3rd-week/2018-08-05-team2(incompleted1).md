@@ -135,7 +135,7 @@ import java.util.NavigableSet;
 import java.util.Set;
 import java.util.concurrent.ConcurrentSkipListSet;
 
-public class CSSDemo {
+public class ConcurrentSkipListSetDemo {
     public static void main(String[] args) {
         NavigableSet<String> citySet = new ConcurrentSkipListSet<String>();
         citySet.add("Seoul");
