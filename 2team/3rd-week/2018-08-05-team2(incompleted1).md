@@ -89,3 +89,107 @@ ConcurrentSkipListSet
 ### NavigableSet과 마찬가지로 **오름차순, 내림차순** 접근 모두 가능
 > 단, 오름차순 탐색속도가 더 빠르다.
 
+### ConcurrentSkipListSet을 이용한 샘플 코드 - 1
+
+```java
+import java.util.Iterator;
+import java.util.NavigableSet;
+import java.util.concurrent.ConcurrentSkipListSet;
+
+public class ConcurrentSkipListSetDemo {
+
+    public static void main(String[] args) {
+        NavigableSet<String> citySet = new ConcurrentSkipListSet<String>();
+        citySet.add("Seoul");
+        citySet.add("Cheongju");
+        citySet.add("Seongnam");
+        citySet.add("Jeonju");
+        citySet.add("Busan");
+
+        
+        System.out.println("---- Traversing the set----");
+        Iterator<String> itr = citySet.iterator();
+        while(itr.hasNext()){
+            System.out.println("Value -  " + itr.next());
+        }
+    }
+}
+```
+
+### 출력 결과
+
+    ---- Traversing the set----  
+    Value - Busan  
+    Value - Cheongju  
+    Value - Jeonju  
+    Value - Seongnam  
+    Value - Seoul  
+
+> 별도의 Comparator을 제시하지 않았기 때문에 원소를 추가하면 자동으로 알파벳순으로 정렬한다. (통념적 순서)
+
+### ConcurrentSkipListSet을 이용한 샘플 코드 - 2
+
+```java
+import java.util.Iterator;
+import java.util.NavigableSet;
+import java.util.Set;
+import java.util.concurrent.ConcurrentSkipListSet;
+
+public class CSSDemo {
+    public static void main(String[] args) {
+        NavigableSet<String> citySet = new ConcurrentSkipListSet<String>();
+        citySet.add("Seoul");
+        citySet.add("Cheongju");
+        citySet.add("Seongnam");
+        citySet.add("Jeonju");
+        citySet.add("Busan");
+        
+        System.out.println("---- Traversing the set-----");
+        Iterator<String> itr = citySet.iterator();
+        while(itr.hasNext()){
+            System.out.println("Value -  " + itr.next());
+        }
+
+        System.out.println("---- Higher & Lower-----");
+        
+        System.out.println("Higher - " + citySet.higher("B"));
+        
+        System.out.println("Lower - " + citySet.lower("Seongnam"));
+        
+        System.out.println("---- Tail Set -----");
+        
+        Set<String> set = citySet.tailSet("Cheongju");
+        
+        itr = set.iterator();
+        while(itr.hasNext()){
+            System.out.println("Value -  " + itr.next());
+        }
+    }
+}
+```
+
+### 출력 결과
+
+    ---- Traversing the set-----  
+    Value - Busan  
+    Value - Cheongju  
+    Value - Jeonju  
+    Value - Seongnam  
+    Value - Seoul  
+    ---- Higher & Lower ----
+    Higher - Busan
+    Lower - Jeonju
+    --- Tail Set ----
+    Value - Cheongju  
+    Value - Jeonju  
+    Value - Seongnam  
+    Value - Seoul
+
+> Higher : 지정된 원소 또는 입력된 데이터 바로 윗값의 원소를 반환한다. 입력된 데이터가 B이므로 사전적 순서 상 Busan이 반환된다.  
+> Lower : 지정된 원소 또는 입력된 데이터 바로 아랫값의 원소를 반환한다. 지정된 원소가 Seongnam이므로 사전적 순서 상 Jeonju가 반환된다.  
+> tailSet : 매개변수가 Set의 원소 하나이므로 SortedSet의 메서드임을 알 수 있다. 지정된 원소 Cheongju 이상의 값을 갖는 원소들이 반환된다.
+
+
+참고한 사이트  
+https://docs.oracle.com/javase/10/docs/api/overview-summary.html  
+https://netjs.blogspot.com/
