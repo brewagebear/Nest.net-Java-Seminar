@@ -76,4 +76,4 @@ Resource Location)
 
 예시)
 ![Alt text](example.jpg)
-![Alt text](example2.jpg)
+
